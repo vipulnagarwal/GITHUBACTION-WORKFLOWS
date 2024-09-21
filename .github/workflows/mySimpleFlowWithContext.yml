@@ -36,8 +36,8 @@ jobs:
           echo test, and deploy your project.
 
       - name: Who initialized the flow
-        run: "${{github.actor}} initialized the flow"
+        run: echo "${{github.actor}} initialized the flow"
 
 
       - name: Debug the github context
-        run: "${{toJSON(github)}}"
+        run: echo "${{toJSON(github)}}"
